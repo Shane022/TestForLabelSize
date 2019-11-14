@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlZ-ao-TV5">
+                                <rect key="frame" x="32" y="134" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-Gp-22U">
+                                <rect key="frame" x="32" y="160" width="350" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qpu-SX-bDP">
+                                <rect key="frame" x="30" y="200.5" width="354" height="31"/>
+                                <connections>
+                                    <action selector="changeFont:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wdt-QC-1p2"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFQ-e2-3vm">
+                                <rect key="frame" x="32" y="306.5" width="350" height="38.5"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54O-nB-zld">
+                                <rect key="frame" x="32" y="360" width="350" height="162.5"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6f-bM-rMg">
+                                <rect key="frame" x="32" y="270.5" width="350" height="21"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写，一种软件设计典范，用一种业务逻辑、数据、界面显示分离的方法组织代码，将业务逻辑聚集到一个部件里面，在改进和个性化定制界面及用户交互的同时，不需要重新编写业务逻辑。MVC被独特的发展起来用于映射传统的输入、处理和输出功</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GHb-Gp-22U" firstAttribute="trailing" secondItem="AlZ-ao-TV5" secondAttribute="trailing" id="2ve-Tt-wcg"/>
+                            <constraint firstItem="cFQ-e2-3vm" firstAttribute="trailing" secondItem="Qpu-SX-bDP" secondAttribute="trailing" id="3kz-ZO-5LR"/>
+                            <constraint firstItem="Qpu-SX-bDP" firstAttribute="trailing" secondItem="GHb-Gp-22U" secondAttribute="trailing" id="7PX-cY-bXx"/>
+                            <constraint firstItem="cFQ-e2-3vm" firstAttribute="top" secondItem="k6f-bM-rMg" secondAttribute="bottom" constant="15" id="AaO-n2-MXP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AlZ-ao-TV5" secondAttribute="trailing" constant="32" id="BS8-9R-xOq"/>
+                            <constraint firstItem="54O-nB-zld" firstAttribute="top" secondItem="cFQ-e2-3vm" secondAttribute="bottom" constant="15" id="IOY-Ds-YfG"/>
+                            <constraint firstItem="k6f-bM-rMg" firstAttribute="trailing" secondItem="Qpu-SX-bDP" secondAttribute="trailing" id="Iiz-vR-ByP"/>
+                            <constraint firstItem="54O-nB-zld" firstAttribute="leading" secondItem="cFQ-e2-3vm" secondAttribute="leading" id="Lhe-J0-yye"/>
+                            <constraint firstItem="k6f-bM-rMg" firstAttribute="leading" secondItem="Qpu-SX-bDP" secondAttribute="leading" id="NRg-7a-2wP"/>
+                            <constraint firstItem="54O-nB-zld" firstAttribute="trailing" secondItem="cFQ-e2-3vm" secondAttribute="trailing" id="Ojk-QA-sRp"/>
+                            <constraint firstItem="cFQ-e2-3vm" firstAttribute="leading" secondItem="Qpu-SX-bDP" secondAttribute="leading" id="RSZ-r6-pww"/>
+                            <constraint firstItem="GHb-Gp-22U" firstAttribute="top" secondItem="AlZ-ao-TV5" secondAttribute="bottom" constant="5" id="VCM-7c-Svx"/>
+                            <constraint firstItem="Qpu-SX-bDP" firstAttribute="top" secondItem="GHb-Gp-22U" secondAttribute="bottom" constant="20" id="XQ0-rF-n8K"/>
+                            <constraint firstItem="AlZ-ao-TV5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="g0A-zT-CvI"/>
+                            <constraint firstItem="Qpu-SX-bDP" firstAttribute="leading" secondItem="GHb-Gp-22U" secondAttribute="leading" id="hms-W1-Y5f"/>
+                            <constraint firstItem="AlZ-ao-TV5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="j5R-QH-vON"/>
+                            <constraint firstItem="k6f-bM-rMg" firstAttribute="top" secondItem="Qpu-SX-bDP" secondAttribute="bottom" constant="40" id="sqr-kh-p6I"/>
+                            <constraint firstItem="GHb-Gp-22U" firstAttribute="leading" secondItem="AlZ-ao-TV5" secondAttribute="leading" id="wnf-ms-xYb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="fontLabel" destination="AlZ-ao-TV5" id="ndP-fK-YgZ"/>
+                        <outlet property="fontSlider" destination="Qpu-SX-bDP" id="YaR-ac-p8M"/>
+                        <outlet property="heightLabel" destination="GHb-Gp-22U" id="DkF-WQ-wjW"/>
+                        <outlet property="multiLineContentLabel" destination="54O-nB-zld" id="M2U-Ux-IoX"/>
+                        <outlet property="oneLineContentLabel" destination="k6f-bM-rMg" id="UjS-Ga-pi6"/>
+                        <outlet property="twoLineContentLabel" destination="cFQ-e2-3vm" id="6ps-fU-e8t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
         </scene>
     </scenes>
 </document>
